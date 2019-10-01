@@ -5,3 +5,5 @@ function reduceBool(arr) {
   }
   return false;
 }
+
+module.exports = reduceBool;

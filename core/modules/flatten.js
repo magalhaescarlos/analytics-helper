@@ -18,3 +18,5 @@ function flatten(arrs) {
 
   return result;
 }
+
+module.exports = flatten;

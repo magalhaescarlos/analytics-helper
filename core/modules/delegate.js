@@ -25,8 +25,12 @@ function delegate(id, event, selector, oldHandler, parent) {
     event = 'on' + event;
   }
 
-  handler = function (e) {
-    for (var target = e.target; target && target !== this; target = target.parentNode) {
+  handler = function(e) {
+    for (
+      var target = e.target;
+      target && target !== this;
+      target = target.parentNode
+    ) {
       if (matches(target, selector)) {
         var handler = safeFn(id, oldHandler, {
           event: event,
@@ -47,3 +51,5 @@ function delegate(id, event, selector, oldHandler, parent) {
     (parent || document)[method](event, handler, false);
   }
 }
+
+module.exports = delegate;

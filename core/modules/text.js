@@ -17,3 +17,5 @@ function text(elm, opts) {
 
   return opts.sanitize ? sanitize(text, opts.sanitize) : text;
 }
+
+module.exports = text;

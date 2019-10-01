@@ -37,3 +37,5 @@ function on(id, event, selector, oldCallback, parent) {
     }
   }
 }
+
+module.exports = on;

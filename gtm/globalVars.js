@@ -1,6 +1,7 @@
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var jQuery = window.jQuery;
 var fn = {};
+
 var options = {
   helperName: 'analyticsHelper',
   dataLayerName: 'dataLayer',
@@ -18,9 +19,11 @@ var options = {
     helper.setDataLayer('noInteraction', undefined);
   }
 };
+
 var internal = {
-  sentPageview: false
+    sentPageview: false
 };
+
 var helper = {
   internal: internal,
   init: init,

@@ -3,3 +3,5 @@ function log(type, info, obj) {
     console[type](info, obj);
   }
 }
+
+module.exports = log;
